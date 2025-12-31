@@ -1,0 +1,157 @@
+/* src/pages/pages.css */
+
+.page {
+  background-color: #0d1b0d; /* dark green-black background */
+  color: #d4f1be;            /* light green text */
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Headings */
+.page h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #a8ff60; /* brighter green for headings */
+  text-decoration: none;
+  text-align: center; /* center align */
+}
+
+/* Images */
+.page img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px #4CAF50; /* green glow effect */
+}
+
+/* Buttons */
+.page button {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* green button */
+  color: #0d1b0d; /* dark text for contrast */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.page button:hover {
+  background-color: #3e8e41;
+}
+
+/* Text */
+.page p {
+  line-height: 1.6;
+  color: #d4f1be;
+  text-decoration: none;
+}
+
+/* Links */
+.page a {
+  color: #a8ff60; /* brighter green for links */
+  text-decoration: none;
+}
+
+/* Remove default link underline for links inside a card */
+.game-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Title link: keep underline and bright green color */
+.game-title {
+  text-decoration: underline;
+  color: #a8ff60;
+  display: inline-block;
+}
+
+.game-title:link
+.game-title:visited,
+.game-title:active,
+.game-title:focus {
+  color: #a8ff60;
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Image link styling */
+.game-image-link {
+  text-decoration: none;
+  display: inline-block;
+}
+.game-image-link img.game-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgba(76, 175, 80, 0.45); /* green glow */
+  display: block;
+}
+
+/* Game info */
+.game-info {
+  margin: 8px 0;
+  color: #d4f1be;
+  text-decoration: none;
+}
+.game-info-value {
+  color: #d4f1be;
+  text-decoration: none;
+}
+
+/* Grid layout for games */
+.game-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* responsive grid */
+  gap: 20px;
+  max-width: 1200px; /* keep grid centered */
+}
+
+.game-card {
+  background-color: #1a2b1a;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(168, 255, 96, 0.6);
+}
+
+/* Bigger search bar */
+.search-input {
+  width: 320px;
+  padding: 12px 16px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  border: none;
+  margin: 10px auto 20px auto;
+  display: block;
+}
+
+/* Sorting buttons container */
+.sort-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.sort-controls button {
+  padding: 8px 14px;
+  background-color: #4CAF50;
+  color: #0d1b0d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sort-controls button:hover {
+  background-color: #3e8e41;
+}
