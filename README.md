@@ -21,3 +21,29 @@ This project is a full-stack web application that allows users to browse and exp
 - Express
 
 ## Project Structure
+frontend/
+├─ src/
+│ ├─ components/
+│ ├─ pages/
+│ ├─ utils/
+│ └─ data/
+backend/
+├─ server.js
+├─ package.json
+
+## How It Works
+The React frontend handles all UI rendering, routing, and user interactions.  
+The backend is a simple Express server that provides API endpoints used by the frontend.  
+Data fetching is abstracted into a utility layer to keep components clean and focused on presentation.
+
+## Running Locally
+```bash
+# Frontend
+cd frontend
+npm install
+npm start
+
+# Backend
+cd backend
+npm install
+npm start
